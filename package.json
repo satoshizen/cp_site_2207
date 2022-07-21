@@ -1,0 +1,22 @@
+{
+  "name": "cp_site_2207",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satoshizen/cp_site_2207.git"
+  },
+  "author": "satoshizen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satoshizen/cp_site_2207/issues"
+  },
+  "homepage": "https://github.com/satoshizen/cp_site_2207#readme",
+  "devDependencies": {
+    "sass": "^1.53.0"
+  }
+}
