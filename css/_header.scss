@@ -1,0 +1,102 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+.header {
+  position:fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.header-inner {
+  display: flex;
+  height: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-logo {
+  a {
+    font-size: 18px;
+    color: v.$white;
+    margin-left: 1rem;
+    transition: color .5s ease-in-out;
+    @include m.tablet {
+      font-size: 20px;
+    }
+    @include m.pc {
+      font-size: 24px;
+    }
+  }
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // color: v.$white;
+  font-size:2rem;
+  margin-right: 1rem;
+  transition: color .3s ease-in-out;
+  @include m.tablet {
+    display: none;
+  }
+  i {
+    color: v.$black;
+  }
+}
+
+
+.sp-nav {
+  display: none;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: v.$usu-azuki;
+}
+
+.sp-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include m.tablet {
+    display: none;
+  }
+  li {
+    border-top: 1px v.$azuki solid;
+    &:last-child{
+      border-bottom: 1px v.$azuki solid;
+    }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 0;
+      }
+  }
+}  
+
+.pc-nav {
+    display: none;
+    @include m.tablet {
+      display: flex;
+    }
+    // @media (min-width:550px){
+    //   display: flex;
+    // }  
+
+  .pc-nav-list {
+    display: flex;
+    list-style: none;
+    a {
+      margin-right: 2rem;
+      color: v.$white;
+      @include m.tablet {
+        font-size: 18px;
+      }
+    }  
+  }
+}

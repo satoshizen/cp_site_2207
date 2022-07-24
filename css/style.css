@@ -1,4 +1,172 @@
 @charset "UTF-8";
-/* 文字コードの指定 */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #333;
+  background-color: #fff;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+  border-radius: 100vh;
+}
+
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 30rem;
+  height: 36rem;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+}
+
+.header-inner {
+  display: flex;
+  height: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-logo a {
+  font-size: 18px;
+  color: #fff;
+  margin-left: 1rem;
+  transition: color 0.5s ease-in-out;
+}
+@media screen and (min-width: 550px) {
+  .header-logo a {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-logo a {
+    font-size: 24px;
+  }
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-right: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+@media screen and (min-width: 550px) {
+  .nav-button {
+    display: none;
+  }
+}
+.nav-button i {
+  color: #333;
+}
+
+.sp-nav {
+  display: none;
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #E6D8D8;
+}
+
+.sp-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (min-width: 550px) {
+  .sp-nav-list {
+    display: none;
+  }
+}
+.sp-nav-list li {
+  border-top: 1px #9E6F6F solid;
+}
+.sp-nav-list li:last-child {
+  border-bottom: 1px #9E6F6F solid;
+}
+.sp-nav-list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0;
+}
+
+.pc-nav {
+  display: none;
+}
+@media screen and (min-width: 550px) {
+  .pc-nav {
+    display: flex;
+  }
+}
+.pc-nav .pc-nav-list {
+  display: flex;
+  list-style: none;
+}
+.pc-nav .pc-nav-list a {
+  margin-right: 2rem;
+  color: #fff;
+}
+@media screen and (min-width: 550px) {
+  .pc-nav .pc-nav-list a {
+    font-size: 18px;
+  }
+}
+
+.footer {
+  background-color: #E6D8D8;
+  padding-bottom: 6rem;
+}
+@media screen and (min-width: 550px) {
+  .footer {
+    padding-bottom: 0;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* 文字コードの指定 */
 /*# sourceMappingURL=style.css.map */

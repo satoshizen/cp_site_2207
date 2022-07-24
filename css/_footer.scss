@@ -1,0 +1,19 @@
+@use "variable" as v;
+@use "mixin" as m;
+
+.footer {
+  // height: 20rem;
+  background-color: #E6D8D8;
+  padding-bottom: 6rem;
+  @include m.tablet{
+    padding-bottom: 0;
+  }
+}
+
+.copyright {
+  text-align: center;
+  font-size: 1.0rem;
+  padding-bottom: 1rem;
+  
+}
+
