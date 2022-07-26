@@ -1,49 +1,32 @@
 @use "variable" as v;
 @use "mixin" as m;
 
-.header {
-  position:fixed;
-  top: 0;
-  width: 100%;
-  background-color: transparent;
-}
+// .header {
+//   top: 0;
+//   width: 100%;
+//   background-color: transparent;
+// }
 
 .header-inner {
-  display: flex;
-  height: 6rem;
-  align-items: center;
-  justify-content: space-between;
+  position: fixed;
   width: 100%;
 }
 
-.header-logo {
-  a {
-    font-size: 18px;
-    color: v.$white;
-    margin-left: 1rem;
-    transition: color .5s ease-in-out;
-    @include m.tablet {
-      font-size: 20px;
-    }
-    @include m.pc {
-      font-size: 24px;
-    }
-  }
-}
 
 .nav-button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  // color: v.$white;
+  position: relative;
   font-size:2rem;
-  margin-right: 1rem;
-  transition: color .3s ease-in-out;
   @include m.tablet {
     display: none;
   }
   i {
+    position:absolute;
+    top: 1rem;
+    right: 1rem;
     color: v.$black;
+    // justify-content: right;
+    // text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -56,28 +39,31 @@
   width: 100%;
   text-align: center;
   background-color: v.$usu-azuki;
+  li {
+    list-style: none;
+  }
 }
 
-.sp-nav-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  @include m.tablet {
-    display: none;
-  }
-  li {
-    border-top: 1px v.$azuki solid;
-    &:last-child{
-      border-bottom: 1px v.$azuki solid;
-    }
-      a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        padding: 1rem 0;
-      }
-  }
-}  
+// .sp-nav-list {
+//   list-style: none;
+//   padding: 0;
+//   margin: 0;
+//   @include m.tablet {
+//     display: none;
+//   }
+//   li {
+//     border-top: 1px v.$azuki solid;
+//     &:last-child{
+//       border-bottom: 1px v.$azuki solid;
+//     }
+//       a {
+//         display: block;
+//         width: 100%;
+//         height: 100%;
+//         padding: 1rem 0;
+//       }
+//   }
+// }  
 
 .pc-nav {
     display: none;
@@ -99,4 +85,22 @@
       }
     }  
   }
+}
+
+.header-logo {
+  display:block;
+  text-align:center;
+  padding-top: 5rem;
+  // a {
+  //   font-size: 18px;
+  //   color: v.$white;
+  //   margin-left: 1rem;
+  //   transition: color .5s ease-in-out;
+  //   @include m.tablet {
+  //     font-size: 20px;
+  //   }
+  //   @include m.pc {
+  //     font-size: 24px;
+  //   }
+  // }
 }

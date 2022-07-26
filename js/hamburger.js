@@ -3,3 +3,9 @@ $(document).ready(function(){
       $(".sp-nav").slideToggle();
   });
 });
+
+$(document).ready(function(){
+  $(".contents-button").on("click", function(){
+      $(".contens-nav").slideToggle();
+  });
+});
