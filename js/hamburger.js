@@ -4,8 +4,3 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function(){
-  $(".contents-button").on("click", function(){
-      $(".contens-nav").slideToggle();
-  });
-});

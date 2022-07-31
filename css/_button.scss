@@ -3,14 +3,55 @@
 .btn--orange,
 a.btn--orange {
   color: #fff;
-  background-color: #eb6100;
+  background-color: v.$green02;
+  padding: .5rem 2rem;
+  font-size: 2rem;
+  margin: 0 auto;
+  a { 
+    padding-right: .2rem;
+  }
+
 }
 .btn--orange:hover,
 a.btn--orange:hover {
   color: #fff;
-  background: #f56500;
+  background: v.$green02;
 }
 
 a.btn--radius {
    border-radius: 100vh;
+}
+
+.more-btn {
+  text-align: center;
+  // i {
+  //   font-family: "Font Awesome 5 Free";
+  //   font-weight: 900;
+  //   content: "\f000";
+  //   }
+}
+
+
+.contents-button {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.contents-nav {
+  background-color: v.$green02;
+  // margin: 2rem;
+  ul {
+    padding: 2rem;
+  }
+  li {
+    list-style: none;
+    background-color:v.$green04;
+    // margin-right: 3rem;
+    margin-bottom: 5px;
+    height: 3rem;
+    a {
+      display:flex;
+      justify-content: center;
+
+    }
+  }
 }

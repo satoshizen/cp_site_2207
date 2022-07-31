@@ -2,7 +2,7 @@
 @use "mixin" as m;
 
 .footer {
-  // height: 20rem;
+  height: 2rem;
   background-color: v.$green02;
   padding-bottom: 6rem;
   @include m.tablet{
@@ -11,8 +11,11 @@
 }
 
 small {
-  text-align: center;
+  display: flex;
+  text-align:center;
+  justify-content: center;
   font-size: 1.0rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   color: v.$white;
 }

@@ -27,9 +27,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
   height: 30rem;
-  height: 36rem;
 }
 
 .header-inner {
@@ -96,6 +94,7 @@ img {
 }
 
 .footer {
+  height: 2rem;
   background-color: #038C73;
   padding-bottom: 6rem;
 }
@@ -106,8 +105,11 @@ img {
 }
 
 small {
+  display: flex;
   text-align: center;
+  justify-content: center;
   font-size: 1rem;
+  padding-top: 2rem;
   padding-bottom: 1rem;
   color: #fff;
 }
@@ -115,17 +117,74 @@ small {
 .btn--orange,
 a.btn--orange {
   color: #fff;
-  background-color: #eb6100;
+  background-color: #038C73;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  margin: 0 auto;
+}
+.btn--orange a,
+a.btn--orange a {
+  padding-right: 0.2rem;
 }
 
 .btn--orange:hover,
 a.btn--orange:hover {
   color: #fff;
-  background: #f56500;
+  background: #038C73;
 }
 
 a.btn--radius {
   border-radius: 100vh;
+}
+
+.more-btn {
+  text-align: center;
+}
+
+.contents-button {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.contents-nav {
+  background-color: #038C73;
+}
+.contents-nav ul {
+  padding: 2rem;
+}
+.contents-nav li {
+  list-style: none;
+  background-color: #DBE8E7;
+  margin-bottom: 5px;
+  height: 3rem;
+}
+.contents-nav li a {
+  display: flex;
+  justify-content: center;
+}
+
+.top-main {
+  margin: 0 1rem;
+}
+
+.new {
+  margin: 0 1rem 4rem;
+}
+
+.top-info dd {
+  margin: 0;
+}
+
+.section-title {
+  display: flex;
+}
+
+.section-wrapper {
+  display: flex;
+  margin: 0 auto;
+}
+.section-wrapper img {
+  font-size: 1rem;
 }
 
 /* 文字コードの指定 */
