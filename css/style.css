@@ -183,8 +183,32 @@ a.btn--radius {
   display: flex;
   margin: 0 auto;
 }
-.section-wrapper img {
-  font-size: 1rem;
+.section-wrapper h2 {
+  position: relative;
+}
+.section-wrapper h2::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 50px;
+  background-image: linear-gradient(90deg, #36BFB1 30%, #DBE8E7 30%, #DBE8E7 35%, #038C73 35%, #038C73 65%, #DBE8E7 65%, #DBE8E7 70%, #02735E 70%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -3.5rem;
+}
+
+.gaiyou-wrapper {
+  margin: 0 1rem;
+}
+
+.tate-stripe {
+  position: relative;
+  margin: 1rem;
+  padding-right: 1rem;
+  background-image: linear-gradient(90deg, #36BFB1 30%, #DBE8E7 30%, #DBE8E7 35%, #038C73 35%, #038C73 65%, #DBE8E7 65%, #DBE8E7 70%, #02735E 70%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 /* 文字コードの指定 */

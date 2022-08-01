@@ -1,0 +1,18 @@
+@use "variable" as v;
+
+.tate-stripe {
+  position: relative;
+  margin: 1rem;
+  padding-right: 1rem;
+  background-image :linear-gradient(90deg, 
+  v.$green01 30%,
+  v.$green04 30%, 
+  v.$green04 35%, 
+  v.$green02 35%, 
+  v.$green02 65%, 
+  v.$green04 65%, 
+  v.$green04 70%, 
+  v.$green03 70%);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
