@@ -38,32 +38,29 @@
   left: 0;
   width: 100%;
   text-align: center;
-  background-color: v.$usu-azuki;
-  li {
-    list-style: none;
-  }
+  background-color: v.$green04;
 }
 
-// .sp-nav-list {
-//   list-style: none;
-//   padding: 0;
-//   margin: 0;
-//   @include m.tablet {
-//     display: none;
-//   }
-//   li {
-//     border-top: 1px v.$azuki solid;
-//     &:last-child{
-//       border-bottom: 1px v.$azuki solid;
-//     }
-//       a {
-//         display: block;
-//         width: 100%;
-//         height: 100%;
-//         padding: 1rem 0;
-//       }
-//   }
-// }  
+.sp-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  @include m.tablet {
+    display: none;
+  }
+  li {
+    border-top: 1px v.$green02 solid;
+    &:last-child{
+      border-bottom: 1px v.$green02 solid;
+    }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 1rem 0;
+      }
+  }
+}  
 
 .pc-nav {
     display: none;

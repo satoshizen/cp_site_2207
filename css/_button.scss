@@ -1,7 +1,7 @@
 @use "variable" as v;
 
-.btn--orange,
-a.btn--orange {
+.btn--grn,
+a.btn--grn {
   color: #fff;
   background-color: v.$green02;
   padding: .5rem 2rem;
@@ -12,8 +12,8 @@ a.btn--orange {
   }
 
 }
-.btn--orange:hover,
-a.btn--orange:hover {
+.btn--grn:hover,
+a.btn--grn:hover {
   color: #fff;
   background: v.$green02;
 }
