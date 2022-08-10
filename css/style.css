@@ -232,13 +232,9 @@ a.btn--radius {
   margin: 0 1rem;
 }
 
-.tate-stripe {
-  position: relative;
-  margin: 1rem;
-  padding-right: 1rem;
-  background-image: linear-gradient(90deg, #36BFB1 30%, #DBE8E7 30%, #DBE8E7 35%, #038C73 35%, #038C73 65%, #DBE8E7 65%, #DBE8E7 70%, #02735E 70%);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+.main-wrapper .under-line {
+  padding-bottom: 3rem;
+  border-bottom: solid 2px #02735E;
 }
 
 .contact-container {

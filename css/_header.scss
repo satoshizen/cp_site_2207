@@ -67,16 +67,16 @@
     @include m.tablet {
       display: flex;
     }
-    // @media (min-width:550px){
-    //   display: flex;
-    // }  
+    @media (min-width:550px){
+      display: flex;
+    }
 
   .pc-nav-list {
     display: flex;
     list-style: none;
     a {
       margin-right: 2rem;
-      color: v.$white;
+      color: v.$dark-gray;
       @include m.tablet {
         font-size: 18px;
       }
@@ -88,16 +88,4 @@
   display:block;
   text-align:center;
   padding-top: 5rem;
-  // a {
-  //   font-size: 18px;
-  //   color: v.$white;
-  //   margin-left: 1rem;
-  //   transition: color .5s ease-in-out;
-  //   @include m.tablet {
-  //     font-size: 20px;
-  //   }
-  //   @include m.pc {
-  //     font-size: 24px;
-  //   }
-  // }
 }

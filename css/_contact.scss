@@ -1,0 +1,15 @@
+@use "variable" as v;
+
+.contact-container {
+  margin : 0 1rem;
+ }
+ 
+.asterisk {
+  color : v.$red;
+  font-size: 1rem;
+ }
+.asterisk::before {
+  content:"※";
+}
+
+

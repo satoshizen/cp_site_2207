@@ -59,3 +59,10 @@
   .main-wrapper {
     margin : 0 1rem;
   }
+
+  .main-wrapper {
+    .under-line {
+      padding-bottom: 3rem;
+      border-bottom: solid 2px v.$green03;
+    }
+  }
