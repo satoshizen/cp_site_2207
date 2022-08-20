@@ -16,7 +16,7 @@
 .nav-button {
   position: relative;
   font-size:2rem;
-  @include m.tablet {
+  @include m.pc {
     display: none;
   }
   i {
@@ -64,16 +64,18 @@
 
 .pc-nav {
     display: none;
-    @include m.tablet {
+    @include m.pc {
       display: flex;
+      justify-content: center;
     }
-    @media (min-width:550px){
-      display: flex;
-    }
+    // @media (min-width:768px){
+    //   display: flex;
+    // }
 
   .pc-nav-list {
     display: flex;
     list-style: none;
+    padding: 0;
     a {
       margin-right: 2rem;
       color: v.$dark-gray;

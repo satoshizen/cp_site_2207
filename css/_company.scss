@@ -10,6 +10,8 @@
 
 
 .top-info {
+  padding: 1rem;
+  border-bottom: solid 2px v.$green; 
   dd {
     margin: 0;
   }
@@ -62,6 +64,7 @@
 
   .main-wrapper {
     .under-line {
+      padding-top: 2rem;
       padding-bottom: 3rem;
       border-bottom: solid 2px v.$green03;
     }

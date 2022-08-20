@@ -21,11 +21,22 @@
         <header class="header">
             <!-- ここにヘッダーが入ります -->
             <div class="header-inner">
-                <div id="nav-button" class="nav-button">
-                    <i class="fas fa-bars" aria-label="menu"></i>
-                </div>
-                <nav class="sp-nav">
-                    <ul class="sp-nav-list">
+                <div class="openbtn"><span></span><span></span><span></span></div>
+                <nav id="g-nav">
+                    <div id="g-nav-list">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="company.html">COMPANY</a></li>
+                            <li><a href="service.html">SERVICE</a></li>
+                            <li><a href="safety.html">SAFETY</a></li>
+                            <li><a href="recruit.html">RECRUIT</a></li>
+                            <li><a href="topic.html">TOPIC</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <nav class="pc-nav">
+                    <ul class="pc-nav-list">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="company.html">COMPANY</a></li>
                         <li><a href="service.html">SERVICE</a></li>
@@ -34,18 +45,7 @@
                         <li><a href="topic.html">TOPIC</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
-                </nav>
-                <!-- <nav class="pc-nav">
-                    <ul class="pc-nav-list">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="company.html">COMPANY</a></li>
-                        <li><a href="service.html">SERVICE</a></li>
-                        <li><a href="sefety.html">SAFETY</a></li>
-                        <li><a href="recruit.html">RECRUIT</a></li>
-                        <li><a href="topic.html">TOPIC</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>                    -->
+                </nav>                   
             </div>
             <section class="header-logo">
                 <img class="logo image" src="./images/オーロラ物流logo.png" alt="オーロラ物流">
@@ -103,8 +103,8 @@
 
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="./js/hamburger.js"></script>
-        <script src="./js/contents.js"></script>
+        <!--自作のJS-->
+        <script src="js/g-nav.js"></script>
 
     </body>
 </html>

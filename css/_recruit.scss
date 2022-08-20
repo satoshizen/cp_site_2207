@@ -1,0 +1,9 @@
+@use "variable" as v;
+
+
+.recruit-form {
+  input, select, textarea{
+    background: v.$green04;
+    outline: none
+  }
+}

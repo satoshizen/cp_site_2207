@@ -21,11 +21,22 @@
         <header class="header">
             <!-- ここにヘッダーが入ります -->
             <div class="header-inner">
-                <div id="nav-button" class="nav-button">
-                    <i class="fas fa-bars" aria-label="menu"></i>
-                </div>
-                <nav class="sp-nav">
-                    <ul class="sp-nav-list">
+                <div class="openbtn"><span></span><span></span><span></span></div>
+                    <nav id="g-nav">
+                        <div id="g-nav-list">
+                            <ul>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="company.html">COMPANY</a></li>
+                                <li><a href="service.html">SERVICE</a></li>
+                                <li><a href="safety.html">SAFETY</a></li>
+                                <li><a href="recruit.html">RECRUIT</a></li>
+                                <li><a href="topic.html">TOPIC</a></li>
+                                <li><a href="contact.html">CONTACT</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                <nav class="pc-nav">
+                    <ul class="pc-nav-list">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="company.html">COMPANY</a></li>
                         <li><a href="service.html">SERVICE</a></li>
@@ -34,18 +45,7 @@
                         <li><a href="topic.html">TOPIC</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
-                </nav>
-                <!-- <nav class="pc-nav">
-                    <ul class="pc-nav-list">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="company.html">COMPANY</a></li>
-                        <li><a href="service.html">SERVICE</a></li>
-                        <li><a href="sefety.html">SAFETY</a></li>
-                        <li><a href="recruit.html">RECRUIT</a></li>
-                        <li><a href="topic.html">TOPIC</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>                    -->
+                </nav>                   
             </div>
             <section class="header-logo">
                 <img class="logo image" src="./images/オーロラ物流logo.png" alt="オーロラ物流">
@@ -63,7 +63,7 @@
                 <img src="./images/24217177_m.jpg" alt="truck03">
             </section>
             <div class="main-wrapper">
-                <section class="topic02 under-line">
+                <section class="topic0403 under-line">
                     <h3>令和4年 第3回安全会議</h3>
                     <P>2022年5月14日 15+00開催<br> 開催場所 唐崎公民館<br> 参加者：全員</P>
                     <p>議事<br>・年間目標 追突防止
@@ -75,7 +75,7 @@
                          ＊じめじめシーズン到来！梅雨の時期、<br>
                             夏本番前の健康管理について・・約５分</p>
                 </section>
-                <section class="topic01 under-line">
+                <section class="topic0402 under-line">
                     <h3>令和4年 第2回安全会議</h3>
                     <P>2022年4月9日 15:00開催<br>開催場所 唐崎公民館<br>参加者：全員</p>
                     <p>議事<br>・年間目標 追突防止<br>
@@ -88,7 +88,20 @@
                         ＊道路交通法施行規則の改正について<br>
                         ・お得意先様より<br>
                           ☆協力会社向け安全研修資料をもとに会議</p>
+                </section>                
+                <section class="topic0401 under-line">
+                    <h3>令和4年 第1回安全会議</h3>
+                    <P>2022年2月14日 15+00開催<br> 開催場所 唐崎公民館<br> 参加者：全員</P>
+                    <p>議事<br>・年間目標 追突防止
+                        ・短期目標 4月からバック事故注意<br>
+                        ・日新火災海上保険 門脇氏より<br>
+                         ＊フリート契約の代理店変更、<br>
+                            保険会社変更について・・・約５分<br>
+                         *『いのちを守る』・・・DVD視聴 約20分   
+                         ＊じめじめシーズン到来！梅雨の時期、<br>
+                            夏本番前の健康管理について・・約５分</p>
                 </section>
+
                 <div class="more-btn">
                     <a href="" class="btn btn--grn btn--radius">もっと見る<i class="fas fa-arrow-down"></i></a>
                 </div>
@@ -116,8 +129,8 @@
 
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="./js/hamburger.js"></script>
-        <script src="./js/contents.js"></script>
+        <!--自作のJS-->
+        <script src="js/g-nav.js"></script>
 
     </body>
 </html>

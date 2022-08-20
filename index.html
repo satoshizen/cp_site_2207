@@ -8,8 +8,9 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="./css/style.css">
 
+        <link rel="stylesheet" href="./css/style.css">
+        
         <!-- FontAwesome -->
         <script src="https://kit.fontawesome.com/33d01a83f0.js" crossorigin="anonymous"></script>
 
@@ -21,26 +22,26 @@
         <header class="header">
             <!-- ここにヘッダーが入ります -->
             <div class="header-inner">
-                <div id="nav-button" class="nav-button">
-                    <i class="fas fa-bars" aria-label="menu"></i>
-                </div>
-                <nav class="sp-nav">
-                    <ul class="sp-nav-list">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="company.html">COMPANY</a></li>
-                        <li><a href="service.html">SERVICE</a></li>
-                        <li><a href="safety.html">SAFETY</a></li>
-                        <li><a href="recruit.html">RECRUIT</a></li>
-                        <li><a href="topic.html">TOPIC</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
+                <div class="openbtn"><span></span><span></span><span></span></div>
+                <nav id="g-nav">
+                    <div id="g-nav-list"><!--ナビの数が増えた場合縦スクロールするためのdiv※不要なら削除-->
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>  
+                            <li><a href="company.html">COMPANY</a></li>  
+                            <li><a href="service.html">SERVICE</a></li>  
+                            <li><a href="safety.html">SAFETY</a></li>
+                            <li><a href="recruit.html">RECRUIT</a></li>
+                            <li><a href="topic.html">TOPIC</a></li>
+                            <li><a href="contact.html">CONTACT</a></li>
+                        </ul>
+                    </div>
                 </nav>
                 <nav class="pc-nav">
                     <ul class="pc-nav-list">
                         <li><a href="index.html">HOME</a></li>
                         <li><a href="company.html">COMPANY</a></li>
                         <li><a href="service.html">SERVICE</a></li>
-                        <li><a href="sefety.html">SAFETY</a></li>
+                        <li><a href="safety.html">SAFETY</a></li>
                         <li><a href="recruit.html">RECRUIT</a></li>
                         <li><a href="topic.html">TOPIC</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
@@ -57,49 +58,52 @@
             <section class="cover">
                 <img src="./images/brian-stalter-arotxe540N4-unsplash.jpg" alt="truck01">
             </section>
-            <section class="top-main">
-                <h2>株式会社オーロラ物流</h2>
-                <P>私たちの会社は荷物を運ぶ会社です。荷物を通して人と人との『信頼』や『まごころ』も同時に運びます。<br>
-                    『皆で考え、皆で取り組む』が当社のモットーです。<br>
-                    全従業員が経営者としての感覚で顧客サービスや安全対策に取り組んでおります。<br>
-                    『お客様の満足』が私たちの最高の喜びです。</P>
-            </section>
-            <section class="new">
-                <h2 id="newsinfo">更新情報・お知らせ</h2>
-                <dl>
-                    <div class="top-info">
-                    <dt>
-                        <time datetime="2014-00-00">2022-07/09</time>
-                    </dt>
-                    <dd>
-                        <a href="topic.html">トピックス</a>
-                        に「令和4年 第3回安全会議」をアップしました。
-                    </dd>
+            <section class="main-wrapper">
+                <section class="top-main under-line">
+                    <h2>株式会社オーロラ物流</h2>
+                    <P>私たちの会社は荷物を運ぶ会社です。荷物を通して人と人との『信頼』や『まごころ』も同時に運びます。<br>
+                        『皆で考え、皆で取り組む』が当社のモットーです。<br>
+                        全従業員が経営者としての感覚で顧客サービスや安全対策に取り組んでおります。<br>
+                        『お客様の満足』が私たちの最高の喜びです。</P>
+                </section>
+                <section class="new under-line">
+                    <h2 id="newsinfo">更新情報・お知らせ</h2>
+                    <dl>
+                        <div class="top-info">
+                        <dt>
+                            <time datetime="2014-00-00">2022-07/09</time>
+                        </dt>
+                        <dd>
+                            <a href="topic.html">トピックス</a>
+                            に「令和4年 第3回安全会議」をアップしました。
+                        </dd>
+                        </div>
+                        <div class="top-info">
+                        <dt>
+                            <time datetime="2014-00-00">2022-06/08</time>
+                        </dt>
+                        <dd>
+                            <a href="topic.html">トピックス</a>
+                            に「令和4年 第2回安全会議」をアップしました。
+                        </dd>
+                        </div>
+                        <div class="top-info">
+                        <dt>
+                            <time datetime="2014-00-00">2022-04/07</time>
+                        </dt>
+                        <dd>
+                            <a href="topic.html">トピックス</a>
+                            に「令和4年 第1回安全会議」をアップしました。
+                        </dd>
+                        </div>
+                    </dl>
+                    <div class="more-btn">
+                        <a href="" class="btn btn--grn btn--radius">もっと見る<i class="fas fa-arrow-down"></i></a>
                     </div>
-                    <div class="top-info">
-                    <dt>
-                        <time datetime="2014-00-00">2022-06/08</time>
-                    </dt>
-                    <dd>
-                        <a href="topic.html">トピックス</a>
-                        に「令和4年 第2回安全会議」をアップしました。
-                    </dd>
-                    </div>
-                    <div class="top-info">
-                    <dt>
-                        <time datetime="2014-00-00">2022-04/07</time>
-                    </dt>
-                    <dd>
-                        <a href="topic.html">トピックス</a>
-                        に「令和4年 第1回安全会議」をアップしました。
-                    </dd>
-                    </div>
-                </dl>
-                <div class="more-btn">
-                    <a href="" class="btn btn--grn btn--radius">もっと見る<i class="fas fa-arrow-down"></i></a>
-                </div>
+                </section>
             </section>
             <section class="contents-button">
+            
                 <nav class="contents-nav">
                     <ul>
                         <li><a href="index.html">HOME</a></li>
@@ -122,8 +126,7 @@
 
         <!-- JS -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="./js/hamburger.js"></script>
-        <script src="./js/contents.js"></script>
-
+        <!--自作のJS-->
+        <script src="js/g-nav.js"></script>
     </body>
 </html>
