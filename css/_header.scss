@@ -79,6 +79,9 @@
     a {
       margin-right: 2rem;
       color: v.$dark-gray;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+
       @include m.tablet {
         font-size: 18px;
       }

@@ -106,6 +106,8 @@ img {
 .pc-nav .pc-nav-list a {
   margin-right: 2rem;
   color: #484848;
+  letter-spacing: 0.1em;
+  font-weight: bold;
 }
 @media screen and (min-width: 550px) {
   .pc-nav .pc-nav-list a {
@@ -163,25 +165,31 @@ a.btn--radius {
 }
 
 .contents-button {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin: 3rem auto;
 }
 
 .contents-nav {
+  display: flex;
   background-color: #038C73;
 }
 .contents-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 2rem;
 }
-.contents-nav li {
+.contents-nav ul li {
   list-style: none;
   background-color: #DBE8E7;
   margin-bottom: 5px;
-  height: 3rem;
+  padding: 1rem;
+  width: 43%;
 }
-.contents-nav li a {
+.contents-nav ul li a {
   display: flex;
   justify-content: center;
+  letter-spacing: 0.1em;
+  font-weight: bold;
 }
 
 .top-main {
@@ -194,7 +202,7 @@ a.btn--radius {
 
 .top-info {
   padding: 1rem;
-  border-bottom: solid 2px #BADCAD;
+  border-bottom: solid 2px #36BFB1;
 }
 .top-info dd {
   margin: 0;
@@ -239,8 +247,28 @@ a.btn--radius {
   border-bottom: solid 2px #02735E;
 }
 
+@media screen and (min-width: 550px) {
+  .safety-container .under-line {
+    display: flex;
+  }
+}
+@media screen and (min-width: 550px) {
+  .safety-container .under-line .safety-wrap {
+    width: 45%;
+    margin-left: 2rem;
+  }
+}
 .safety-container .under-line img {
+  display: block;
+  margin: 0 auto;
   margin-top: 2rem;
+  width: 70%;
+}
+@media screen and (min-width: 550px) {
+  .safety-container .under-line img {
+    width: 42%;
+    height: 42%;
+  }
 }
 
 .top-info {
@@ -384,6 +412,54 @@ a.btn--radius {
   left: 18px;
   transform: translateY(-6px) rotate(45deg);
   width: 30%;
+}
+
+.pagination.container {
+  margin-top: 4rem;
+}
+
+.Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px #36BFB1;
+  border-radius: 9999px;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+}
+
+.Pagination > * + * {
+  border-left: solid 2px #36BFB1;
+}
+
+.Pagination-Item-Link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 45px;
+  height: 45px;
+  background: #fff;
+  font-size: 14px;
+  color: #36BFB1;
+  font-weight: bold;
+  transition: all 0.15s linear;
+}
+
+.Pagination-Item-Link-Icon {
+  width: 20px;
+}
+
+.Pagination-Item-Link.isActive {
+  background: #111;
+  color: #fff;
+  pointer-events: none;
+}
+
+.Pagination-Item-Link:not(.isActive):hover {
+  background: #111;
+  color: #fff;
 }
 
 /* 文字コードの指定 */

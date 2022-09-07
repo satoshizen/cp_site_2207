@@ -33,25 +33,30 @@ a.btn--radius {
 
 
 .contents-button {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin: 3rem auto;
 }
 .contents-nav {
+  display: flex;
   background-color: v.$green02;
-  // margin: 2rem;
   ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 2rem;
-  }
-  li {
-    list-style: none;
-    background-color:v.$green04;
-    // margin-right: 3rem;
-    margin-bottom: 5px;
-    height: 3rem;
-    a {
-      display:flex;
-      justify-content: center;
-
+  
+  
+    li {
+      list-style: none;
+      background-color:v.$green04;
+      margin-bottom: 5px;
+      padding: 1rem;
+      width: 43%;
+      a {
+        display:flex;
+        justify-content: center;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+      }
     }
   }
 }
