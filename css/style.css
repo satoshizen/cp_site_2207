@@ -184,6 +184,7 @@ a.btn--radius {
   margin-bottom: 5px;
   padding: 1rem;
   width: 43%;
+  border-radius: 20px;
 }
 .contents-nav ul li a {
   display: flex;
@@ -245,6 +246,10 @@ a.btn--radius {
   padding-top: 2rem;
   padding-bottom: 3rem;
   border-bottom: solid 2px #02735E;
+}
+
+.sub-container {
+  margin: 0 1rem;
 }
 
 @media screen and (min-width: 550px) {
