@@ -37,6 +37,7 @@ a.btn--radius {
 }
 .contents-nav {
   display: flex;
+  justify-content: center;
   background-color: v.$green02;
   ul {
     display: flex;

@@ -1,11 +1,33 @@
 @use "variable" as v;
+@use "mixin" as m;
 
 .contact-container {
-  margin : 0 1rem;
+  // position: relative;
+  
+  margin : 0 2rem;
+  @include m.pc {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+
+  }
   input, select, textarea {
     background-color: v.$green04;
+
   }
+  // @include m.pc {
+  //   width: 100%;
+  //   max-width: 960px;
+  // }
  }
+//  .inner-container{
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   margin: auto;
+//  }
  
 .asterisk {
   span {
@@ -13,6 +35,16 @@
   font-size: 1rem;
   vertical-align: top;
  }
+}
+
+input, textarea, select {
+  padding: 1rem;
+  border:solid 1px v.$green02;
+  border-radius: 2px;
+
+  &:focus {
+    outline: 1px v.$green03 solid;
+  }
 }
 
 

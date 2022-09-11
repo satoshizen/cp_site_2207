@@ -1,15 +1,36 @@
 @use "variable" as v;
 @use "mixin" as m;
 
-// .header {
-//   top: 0;
-//   width: 100%;
-//   background-color: transparent;
-// }
+.header {
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+
+}
 
 .header-inner {
   position: fixed;
   width: 100%;
+
+  &.scrolled {
+    background-color: v.$green04;
+  .header-logo {
+    a {
+      color: v.$dark-gray;
+    }
+  }
+  .nav-button {
+    i {
+      color: v.$dark-gray;
+    }
+  }
+  .pc-nav-list {
+    a {
+      color: v.$dark-gray;
+    }
+  }
+  }
+  
 }
 
 
@@ -68,9 +89,6 @@
       display: flex;
       justify-content: center;
     }
-    // @media (min-width:768px){
-    //   display: flex;
-    // }
 
   .pc-nav-list {
     display: flex;
