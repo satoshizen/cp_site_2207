@@ -202,7 +202,7 @@ a.btn--radius {
   background-color: #DBE8E7;
   margin-bottom: 5px;
   padding: 1rem;
-  width: 43%;
+  width: 40%;
   border-radius: 20px;
 }
 .contents-nav ul li a {
@@ -312,9 +312,6 @@ a.btn--radius {
   margin-bottom: 2rem;
 }
 
-.contact-container {
-  margin: 0 2rem;
-}
 @media screen and (min-width: 768px) {
   .contact-container {
     width: 100%;
@@ -326,7 +323,11 @@ a.btn--radius {
   background-color: #DBE8E7;
 }
 
-.asterisk span {
+.inner-container {
+  margin: 0 2rem;
+}
+
+P span {
   color: #e34454;
   font-size: 1rem;
   vertical-align: top;
@@ -343,7 +344,6 @@ input:focus, textarea:focus, select:focus {
 
 .recruit-form input, .recruit-form select, .recruit-form textarea {
   background: #DBE8E7;
-  outline: none;
 }
 
 /*========= ナビゲーションのためのCSS ===============*/

@@ -4,7 +4,7 @@
 .contact-container {
   // position: relative;
   
-  margin : 0 2rem;
+  // margin : 0 2rem;
   @include m.pc {
     width: 100%;
     max-width: 960px;
@@ -20,16 +20,11 @@
   //   max-width: 960px;
   // }
  }
-//  .inner-container{
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-//   margin: auto;
-//  }
+ .inner-container{
+  margin: 0 2rem;
+ }
  
-.asterisk {
+P {
   span {
   color : v.$red;
   font-size: 1rem;
