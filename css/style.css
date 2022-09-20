@@ -337,6 +337,12 @@ input, textarea, select {
   padding: 1rem;
   border: solid 1px #038C73;
   border-radius: 2px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 549px) {
+  input, textarea, select {
+    width: 100%;
+  }
 }
 input:focus, textarea:focus, select:focus {
   outline: 1px #02735E solid;

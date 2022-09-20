@@ -36,6 +36,10 @@ input, textarea, select {
   padding: 1rem;
   border:solid 1px v.$green02;
   border-radius: 2px;
+  box-sizing: border-box;
+  @include m.sp {
+    width: 100%;
+  }
 
   &:focus {
     outline: 1px v.$green03 solid;
