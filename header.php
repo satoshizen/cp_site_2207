@@ -19,7 +19,7 @@
 
 </head>
 
-<body>
+<body <?php body_class(); ?>>
 
 
     <!-- ヘッダー -->
@@ -45,6 +45,7 @@
 
         </div>
         <section class="header-logo">
-            <img class="logo image" src="<?php echo get_template_directory_uri(); ?>/images/aurora_logo.png" alt="オーロラ物流">
+            <a href="<?php echo home_url() ?>">
+            <img class="logo image" src="<?php echo get_template_directory_uri(); ?>/images/aurora_logo.png" alt="オーロラ物流"></a>
         </section>
     </header>

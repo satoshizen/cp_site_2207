@@ -477,7 +477,7 @@ input:focus, textarea:focus, select:focus {
   margin-top: 4rem;
 }
 
-.Pagination {
+.wp-pagenavi {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -492,7 +492,7 @@ input:focus, textarea:focus, select:focus {
   border-left: solid 2px #36BFB1;
 }
 
-.Pagination-Item-Link {
+.pages page {
   display: flex;
   justify-content: center;
   align-items: center;

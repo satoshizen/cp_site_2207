@@ -45,3 +45,14 @@ function mp_add_file_types_to_uploads($file_types)
   return $file_types;
 }
 add_action('upload_mimes', 'mp_add_file_types_to_uploads');
+
+// post_type = 'post' でもアーカイブページを作る
+function post_has_archive_func($args, $post_type)
+{
+  if ('post' == $post_type) {
+    $args['rewrite'] = true;
+    $args['has_archive'] = 'topic';
+  }
+  return $args;
+}
+add_filter('register_post_type_args', 'post_has_archive_func', 10, 2);

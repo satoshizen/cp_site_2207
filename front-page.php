@@ -22,8 +22,8 @@
                     <?php $args = array(
                      'posts_per_page' => 3, //3件表示
                      'order'   => 'DESC', //記事の順番変更
-                     );
-                     $post_query = new WP_Query($args);
+                    );
+                    $post_query = new WP_Query($args);
                     if ($post_query->have_posts()) : ?>
 
                         <?php while ($post_query->have_posts()) : $post_query->the_post(); ?>
@@ -32,8 +32,8 @@
                                     </dt>
                                     <dd>
                                         <a href="<?php the_permalink(); ?>">
-                                            <?php the_title(); ?></a>
-                                        <?php the_excerpt(); ?>
+                                            <?php the_title(); ?>
+                                        <?php the_excerpt(); ?></a>
                                     </dd>
                                 </div>
                         <?php endwhile; ?>
@@ -44,7 +44,7 @@
                     <?php endif; ?>
                 </dl>
                 <div class=" more-btn">
-                    <a href="" class="btn btn--grn btn--radius">もっと見る<i class="fas fa-arrow-down"></i></a>
+                    <a href="<?php echo home_url('/topic/') ?>" class="btn btn--grn btn--radius">もっと見る<i class="fas fa-arrow-down"></i></a>
                 </div>
             </div>
 
@@ -52,15 +52,6 @@
 
     </section>
 
-    <section class="contents-button">
-
-    <?php wp_nav_menu(array(
-                'container' => 'nav',
-                'container_class' => 'contents-nav',
-                'items_wrap' => '<ul id="%1$s" class="%2$s contents-nav-list">%3$s</ul>',
-                'menu' => 'main_nav'
-            )); ?>
-    </section>
 </main>
 
 <?php get_footer(); ?>
