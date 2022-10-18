@@ -5,7 +5,7 @@
 
   }
 
-.wp-pagenavi {
+main .wp-pagenavi {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,32 +14,44 @@
   overflow: hidden;
   list-style: none;
   padding: 0;
+
+  span,
+  a {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    font-size: 14px;
+    color: v.$green01;
+    font-weight: bold;
+    transition: all 0.15s linear;
+
+    & + * {
+      border-left: solid 2px v.$green01;
+    }
   }
-  .Pagination > * + * {
-  border-left: solid 2px v.$green01;
+
+  .previouspostslink,
+  .nextpostslink {
+    font-size: 20px;
   }
-  .Pagination-Item-Link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 45px;
-  height: 45px;
-  background: #fff;
-  font-size: 14px;
-  color: v.$green01;
-  font-weight: bold;
-  transition: all 0.15s linear;
+
+  span.current {
+    background: v.$green01;
+    color: #fff;
+    pointer-events: none;
+    border-left: solid 2px v.$green01;
   }
-  .Pagination-Item-Link-Icon {
-  width: 20px;
+
+  a:hover {
+    background: #111;
+    color: #fff;
+    border-left: solid 2px v.$green01;
   }
-  .Pagination-Item-Link.isActive {
-  background: #111;
-  color: #fff;
-  pointer-events: none;
-  }
-  .Pagination-Item-Link:not(.isActive):hover {
-  background: #111;
-  color: #fff;
-  }
+}

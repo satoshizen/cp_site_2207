@@ -30,8 +30,7 @@ img {
   justify-content: center;
   width: 100%;
   aspect-ratio: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header {
@@ -477,7 +476,7 @@ input:focus, textarea:focus, select:focus {
   margin-top: 4rem;
 }
 
-.wp-pagenavi {
+main .wp-pagenavi {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -487,12 +486,11 @@ input:focus, textarea:focus, select:focus {
   list-style: none;
   padding: 0;
 }
-
-.Pagination > * + * {
-  border-left: solid 2px #36BFB1;
-}
-
-.pages page {
+main .wp-pagenavi span,
+main .wp-pagenavi a {
+  border: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -505,21 +503,26 @@ input:focus, textarea:focus, select:focus {
   font-weight: bold;
   transition: all 0.15s linear;
 }
-
-.Pagination-Item-Link-Icon {
-  width: 20px;
+main .wp-pagenavi span + *,
+main .wp-pagenavi a + * {
+  border-left: solid 2px #36BFB1;
 }
-
-.Pagination-Item-Link.isActive {
-  background: #111;
+main .wp-pagenavi .previouspostslink,
+main .wp-pagenavi .nextpostslink {
+  font-size: 20px;
+}
+main .wp-pagenavi span.current {
+  background: #36BFB1;
   color: #fff;
   pointer-events: none;
+  border-left: solid 2px #36BFB1;
 }
-
-.Pagination-Item-Link:not(.isActive):hover {
+main .wp-pagenavi a:hover {
   background: #111;
   color: #fff;
+  border-left: solid 2px #36BFB1;
 }
 
 /* 文字コードの指定 */
+
 /*# sourceMappingURL=style.css.map */
