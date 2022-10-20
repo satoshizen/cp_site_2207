@@ -24,12 +24,18 @@
   margin: 0 2rem;
  }
  
-P {
+p {
   span {
   color : v.$red;
   font-size: 1rem;
   vertical-align: top;
+  
  }
+ .wpcf7-form-control-wrap {
+  position:static;
+  font-size: 1.6rem;
+ }
+
 }
 
 input, textarea, select {

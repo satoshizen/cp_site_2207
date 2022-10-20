@@ -13,9 +13,8 @@ function mp_enqueue_files()
 
   // サイト共通のJS
   wp_enqueue_script('hamburger', get_template_directory_uri() . '/js/g-nav.js', array('jquery'), '1.0', true);
-  if (is_front_page()) {
-    wp_enqueue_script('header', get_template_directory_uri() . '/js/header.js', array('jquery'), '1.0', true);
-  }
+  
+  wp_enqueue_script('header', get_template_directory_uri() . '/js/header.js', array('jquery'), '1.0', true);
 
 
   //サイト共通のCSSの読み込み
