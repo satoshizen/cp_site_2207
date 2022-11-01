@@ -6,14 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ページの説明が入ります">
 
-    <!-- CSS -->
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"> -->
-
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
-
-    <!-- FontAwesome -->
-    <!-- <script src="https://kit.fontawesome.com/33d01a83f0.js" crossorigin="anonymous"></script> -->
+    <?php if( is_user_logged_in() ) : ?>
+        <style type="text/css">
+        .header {
+        margin-top: 32px;
+        }
+        </style>
+    <?php endif; ?>
 
     <?php wp_head(); ?>
 
@@ -25,9 +24,7 @@
     <!-- ヘッダー -->
     <header class="header">
         <!-- ここにヘッダーが入ります -->
-        <div class="header-inner <?php if (!is_front_page()) {
-                                        echo "scrolled";
-                                    } ?>">
+        <div class="header-inner">
             <div class="openbtn"><span></span><span></span><span></span></div>
             <?php wp_nav_menu(array(
                 'container' => 'nav',

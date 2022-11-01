@@ -11,9 +11,11 @@
 .header-inner {
   position: fixed;
   width: 100%;
+  transition: .5s;
 
   &.scrolled {
     background-color: v.$green04;
+    // transition: .5s;
   .header-logo {
     a {
       color: v.$dark-gray;
@@ -110,5 +112,5 @@
 .header-logo {
   display:block;
   text-align:center;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }

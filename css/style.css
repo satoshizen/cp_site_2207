@@ -42,6 +42,7 @@ img {
 .header-inner {
   position: fixed;
   width: 100%;
+  transition: 0.5s;
 }
 .header-inner.scrolled {
   background-color: #DBE8E7;
@@ -135,7 +136,7 @@ img {
 .header-logo {
   display: block;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .footer {
@@ -307,6 +308,10 @@ a.btn--radius {
   }
 }
 
+.wp-block-media-text {
+  margin-bottom: 6rem;
+}
+
 .top-info {
   margin-bottom: 2rem;
 }
@@ -329,14 +334,36 @@ a.btn--radius {
   margin: 0 2rem;
 }
 
-p span {
+div .hissu {
   color: #e34454;
   font-size: 1rem;
   vertical-align: top;
 }
-p .wpcf7-form-control-wrap {
+div .wpcf7-form-control-wrap {
   position: static;
   font-size: 1.6rem;
+}
+div.company input {
+  width: 15rem;
+}
+div.name input {
+  width: 10rem;
+}
+div.male input {
+  width: 20rem;
+}
+div.prefer select {
+  width: 10rem;
+}
+div.city input {
+  width: 20rem;
+}
+div.tel-no input {
+  width: 15rem;
+}
+div.send-btn input {
+  width: 8rem;
+  height: 4rem;
 }
 
 input, textarea, select {
