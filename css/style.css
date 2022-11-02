@@ -278,6 +278,10 @@ a.btn--radius {
   margin: 0 1rem;
 }
 
+.contact-form div {
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 550px) {
   .safety-container .under-line {
     display: flex;
@@ -383,6 +387,10 @@ input:focus, textarea:focus, select:focus {
 
 .recruit-form input, .recruit-form select, .recruit-form textarea {
   background: #DBE8E7;
+}
+
+.recruit-contact-form div {
+  margin-top: 2rem;
 }
 
 /*========= ナビゲーションのためのCSS ===============*/
