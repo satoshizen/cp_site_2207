@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/satoshizen/cp_site_2207.git"
+    "url": "git+https://github.com/satoshizen/RALLY_JAPAN2212nowp.git"
   },
   "author": "satoshizen",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/satoshizen/cp_site_2207/issues"
+    "url": "https://github.com/satoshizen/RALLY_JAPAN2212nowp/issues"
   },
-  "homepage": "https://github.com/satoshizen/cp_site_2207#readme",
+  "homepage": "https://github.com/satoshizen/RALLY_JAPAN2212nowp#readme",
   "devDependencies": {
     "sass": "^1.56.2"
   }
