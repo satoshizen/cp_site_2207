@@ -30,8 +30,7 @@ img {
   justify-content: center;
   width: 100%;
   aspect-ratio: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .header {
@@ -43,6 +42,7 @@ img {
 .header-inner {
   position: fixed;
   width: 100%;
+  transition: 0.5s;
 }
 .header-inner.scrolled {
   background-color: #DBE8E7;
@@ -136,7 +136,7 @@ img {
 .header-logo {
   display: block;
   text-align: center;
-  padding-top: 5rem;
+  padding-top: 7rem;
 }
 
 .footer {
@@ -278,6 +278,10 @@ a.btn--radius {
   margin: 0 1rem;
 }
 
+.contact-form div {
+  margin-top: 2rem;
+}
+
 @media screen and (min-width: 550px) {
   .safety-container .under-line {
     display: flex;
@@ -308,8 +312,15 @@ a.btn--radius {
   }
 }
 
+.wp-block-media-text {
+  margin-bottom: 6rem;
+}
+
 .top-info {
   margin-bottom: 2rem;
+}
+.top-info a h3 {
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -327,16 +338,48 @@ a.btn--radius {
   margin: 0 2rem;
 }
 
-P span {
+div .hissu {
   color: #e34454;
   font-size: 1rem;
   vertical-align: top;
+}
+div .wpcf7-form-control-wrap {
+  position: static;
+  font-size: 1.6rem;
+}
+div.company input {
+  width: 15rem;
+}
+div.name input {
+  width: 10rem;
+}
+div.male input {
+  width: 20rem;
+}
+div.prefer select {
+  width: 10rem;
+}
+div.city input {
+  width: 20rem;
+}
+div.tel-no input {
+  width: 15rem;
+}
+div.send-btn input {
+  width: 8rem;
+  height: 4rem;
 }
 
 input, textarea, select {
   padding: 1rem;
   border: solid 1px #038C73;
   border-radius: 2px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 549px) {
+  input, textarea, select {
+    width: 100%;
+  }
 }
 input:focus, textarea:focus, select:focus {
   outline: 1px #02735E solid;
@@ -344,6 +387,10 @@ input:focus, textarea:focus, select:focus {
 
 .recruit-form input, .recruit-form select, .recruit-form textarea {
   background: #DBE8E7;
+}
+
+.recruit-contact-form div {
+  margin-top: 2rem;
 }
 
 /*========= ナビゲーションのためのCSS ===============*/
@@ -471,7 +518,7 @@ input:focus, textarea:focus, select:focus {
   margin-top: 4rem;
 }
 
-.Pagination {
+main .wp-pagenavi {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -481,12 +528,11 @@ input:focus, textarea:focus, select:focus {
   list-style: none;
   padding: 0;
 }
-
-.Pagination > * + * {
-  border-left: solid 2px #36BFB1;
-}
-
-.Pagination-Item-Link {
+main .wp-pagenavi span,
+main .wp-pagenavi a {
+  border: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -499,21 +545,26 @@ input:focus, textarea:focus, select:focus {
   font-weight: bold;
   transition: all 0.15s linear;
 }
-
-.Pagination-Item-Link-Icon {
-  width: 20px;
+main .wp-pagenavi span + *,
+main .wp-pagenavi a + * {
+  border-left: solid 2px #36BFB1;
 }
-
-.Pagination-Item-Link.isActive {
-  background: #111;
+main .wp-pagenavi .previouspostslink,
+main .wp-pagenavi .nextpostslink {
+  font-size: 20px;
+}
+main .wp-pagenavi span.current {
+  background: #36BFB1;
   color: #fff;
   pointer-events: none;
+  border-left: solid 2px #36BFB1;
 }
-
-.Pagination-Item-Link:not(.isActive):hover {
+main .wp-pagenavi a:hover {
   background: #111;
   color: #fff;
+  border-left: solid 2px #36BFB1;
 }
 
 /* 文字コードの指定 */
+
 /*# sourceMappingURL=style.css.map */

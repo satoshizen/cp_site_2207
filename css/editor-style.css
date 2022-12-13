@@ -1,0 +1,5 @@
+/* // 背景黒の段落スタイル */
+p.p-bg-black{
+	color: #fff;
+	background-color: #000;
+}
